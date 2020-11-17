@@ -25,6 +25,7 @@ namespace Zadaca1
             ep1 = new Episode();
             ep2 = new Episode(10, 64.39, 8.7);
             int viewers = 10;
+            //s
             for (int i = 0; i < viewers; i++)
             {
                 ep1.AddView(GenerateRandomScore());
