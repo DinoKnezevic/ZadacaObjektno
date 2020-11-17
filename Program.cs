@@ -1,5 +1,6 @@
 ﻿using ClassLibrary1;
 using System;
+using ClassLibrary;
 
 namespace Zadaca1
 {
@@ -15,6 +16,11 @@ namespace Zadaca1
                 number = rand.NextDouble() * 10.00;
                 return number;
             }
+            Description description = new Description(1, TimeSpan.FromMinutes(45), "Pilot");
+            Console.WriteLine(description);
+            Episode episode = new Episode(10, 88.64, 9.78, description);
+            Console.WriteLine(episode);
+            Console.WriteLine("!!!!!!!!!! ############# !!!!!!!!!!!!");
             Episode ep1, ep2;
             ep1 = new Episode();
             ep2 = new Episode(10, 64.39, 8.7);
@@ -31,7 +37,7 @@ namespace Zadaca1
             else
             {
                 Console.WriteLine($"Viewers: {ep2.GetViewerCount()}");
-                //najčešći scenarij, na kraj ispisa dodati bezveze neka slova pa to najcesce ispadne
+                
             }
         }
 
